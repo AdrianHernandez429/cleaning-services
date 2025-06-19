@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cleaning Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #afa9a9;
+      color: #333;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: url('Images/Logo.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 75%;
+      opacity: 0.80;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    header {
+      background: #afa9a9;
+      text-align: center;
+      padding: 30px 20px 10px;
+      color: #eaeeec;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: #25a55f;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #0077cc;
+    }
+
+    .carousel {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      background-color: #d4f0e3;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      background-color: #f8f8f8;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .carousel-item .caption {
+      padding: 10px 15px;
+    }
+
+    .carousel-item h3 {
+      margin: 5px 0;
+      font-size: 1.2rem;
+      color: #25a55f;
+    }
+
+    .carousel-item p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 30px;
+    }
+
+    .carousel div {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      background-color: #abd2f1;
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta a {
+      background-color: #25a55f;
+      color: white;
+      padding: 15px 25px;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta a:hover {
+      background-color: #1e874f;
+    }
+
+    footer {
+      text-align: center;
+      color: #aaa;
+      padding: 20px;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .whatsapp-button img {
+      width: 24px;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 350px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .carousel {
+        grid-template-columns: 1fr;
+        padding: 10px;
+      }
+
+      .cta a {
+        width: 90%;
+        font-size: 1rem;
+        padding: 12px 20px;
+      }
+
+      .whatsapp-button {
+        font-size: 1rem;
+        padding: 10px 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🏆 We are 007David Cleaning and we have seven years of experience. 🥇</h1>
+    <p>💦 Window Cleaning • Pressure Cleaning • Sealer</p>
+  </header>
+
+  <section class="carousel">
+    <div class="carousel-item">
+      <img src="Images/roof.jpg" alt="Roof">
+      <div class="caption">
+        <h3>Pressure Cleaning Roof</h3>
+        <p>Remove stains, moss and dirt buildup to protect your home's integrity.</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="carousel-item">
+        <img src="Images/window-cleaning.jpg" alt="Window Cleaning">
+        <h3>Window Cleaning</h3>
+        <p>Enhance the appearance of your home or office with spotless, streak-free windows. Regular cleaning helps prolong window life.</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="carousel-item">
+        <img src="Images/pressure-cleaning.jpg" alt="Pressure Cleaning">
+        <h3>Pressure Cleaning</h3>
+        <p>Remove deep dirt, mold, and grime from surfaces like driveways, patios, and sidewalks using high-powered cleaning tools.</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="carousel-item">
+        <img src="Images/sealer.jpg" alt="Sealer">
+        <h3>Sealer</h3>
+        <p>Protect your surfaces from water damage, staining, and wear by sealing pavers, concrete, or stone finishes professionally.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="Images/pool_deck.jpg" alt="Pool Deck">
+      <div class="caption">
+        <h3>Pool Deck</h3>
+        <p>Keep your pool area safe, clean and slip-free for your family and guests.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="Images/back-patio.jpg" alt="Back Patio">
+      <div class="caption">
+        <h3>Back Patio</h3>
+        <p>Revive your patio with deep cleaning to enjoy your outdoor space again.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="Images/gutters.jpg" alt="Gutters">
+      <div class="caption">
+        <h3>Gutters</h3>
+        <p>Prevent clogs and water damage with regular gutter cleaning services.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="Images/enclosure.jpg" alt="Enclosure Screen">
+      <div class="caption">
+        <h3>Enclosure Screen</h3>
+        <p>We clean delicate screens and frames to restore visibility and appearance.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="Images/walls.jpg" alt="Exterior Walls">
+      <div class="caption">
+        <h3>Exterior Walls</h3>
+        <p>Pressure wash to remove mold, dirt and renew your home's exterior look.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="text-align: center; padding: 40px; background-color: #f0f0f0;">
+    <h2>Our Work in Action</h2>
+    <div class="video-container">
+      <video controls>
+        <source src="Videos/mi_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <div class="cta">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScxqJ2goNWyZRyPC9Di3FCu5g1uy0xgXrC-4YE-wZfGIGPSpw/viewform?usp=dialog" target="_blank">
+      📅 Book Your Service Now!
+    </a>
+  </div>
+
+  <a class="whatsapp-button" 
+    href="https://wa.me/19548539717?text=Hi!%20I'm%20interested%20in%20booking%20a%20cleaning%20service.%20Please%20send%20me%20more%20information.%0A%0A*Name:*%0A*Service:*%0A*Address:*%0A*Date:*" 
+    target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    Chat with Us
+  </a>
+
+  <footer>
+    © 2025 007 David Cleaning. All rights reserved.
+  </footer>
+
+</body>
+</html>
